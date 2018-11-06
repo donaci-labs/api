@@ -10,6 +10,8 @@ django = "^2.1"
 djangorestframework = "^3.9"
 
 [tool.poetry.dev-dependencies]
+pyflakes = "^2.0"
+jedi = "^0.13.1"
 
 [build-system]
 requires = ["poetry>=0.12"]
