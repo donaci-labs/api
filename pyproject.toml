@@ -8,6 +8,8 @@ authors = ["Your Name <you@example.com>"]
 python = "^3.6"
 django = "^2.1"
 djangorestframework = "^3.9"
+gunicorn = "^19.9"
+django_heroku = "^0.3.1"
 
 [tool.poetry.dev-dependencies]
 pyflakes = "^2.0"
