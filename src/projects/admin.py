@@ -18,4 +18,10 @@ class ProjectAdmin(admin.ModelAdmin):
 
 @admin.register(Transaction)
 class TransactionAdmin(admin.ModelAdmin):
+
+    def formated_amount(self, obj):
+        return 'R$ {}'.format(obj.amount)
+    formated_amount.short_description = 'amount'
+
+    list_display = ('project', 'transaction_id', 'formated_amount',)
     list_filter = ('project', 'status',)
